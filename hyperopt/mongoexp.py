@@ -269,7 +269,7 @@ def connection_with_tunnel(
             "127.0.0.1", local_port, document_class=SON, w=1, j=True
         )
     else:
-        connection = pymongo.MongoClient(host, port, document_class=SON, w=1, j=True)
+        connection = pymongo.MongoClient(host, port, document_class=SON, w=1, j=True,  tls=True, retryWrites=False)
         if user:
             if not pw:
                 pw = read_pw()
