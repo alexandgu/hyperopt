@@ -781,7 +781,7 @@ def build_posterior(
 _default_prior_weight = 1.0
 
 # -- suggest best of this many draws on every iteration
-_default_n_EI_candidates = 24
+_default_n_EI_candidates = 120
 
 # -- gamma * sqrt(n_trials) is fraction of to use as good
 _default_gamma = 0.25
